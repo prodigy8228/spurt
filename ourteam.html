@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Team - Spurt</title>
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="extra_style.css" rel="stylesheet">
+  
+  <!-- Custom styles for Team view -->
+  <style>
+    :root {
+      --teal-primary: #008080;
+      --teal-dark: #003333;
+      --teal-light: #e0f2f1;
+      --text-muted: #5a738e;
+    }
+    
+    /* Desktop Hover Navigation Dropdowns */
+    @media (min-width: 992px) {
+      .navbar-nav .hover-dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+      }
+    }
+    
+    /* Managing Director Hero Spotlight */
+    .md-spotlight-card {
+      border: none;
+      border-left: 5px solid var(--teal-primary);
+      background-color: #ffffff;
+    }
+    
+    .md-image {
+      width: 100%;
+      max-width: 280px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    
+    /* Team Card Styling */
+    .team-card {
+      border: none;
+      transition: transform 0.2s ease-in-out;
+    }
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+    .team-avatar {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid var(--teal-light);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Fixed Hover Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="spurtlogo1.png" height="60px" width="200px" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown hover-dropdown">
+          <a class="nav-link dropdown-toggle" href="aboutus.html" id="companyDropdown">Company</a>
+          <ul class="dropdown-menu" aria-labelledby="companyDropdown">
+            <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+            <li><a class="dropdown-item" href="whyspurt.html">Why Spurt</a></li>
+            <li><a class="dropdown-item" href="ourteam.html">Our Team</a></li>
+            <li><a class="dropdown-item" href="career.html">Careers</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown hover-dropdown">
+          <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown">Services</a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="bookkeeping.html">Offshore Bookkeeping</a></li>
+            <li><a class="dropdown-item" href="tax_preparation.html">Tax Preparation</a></li>
+            <li><a class="dropdown-item" href="auditing.html">Audit Assistance</a></li>
+            <li><a class="dropdown-item" href="payroll.html">Payroll Management</a></li>
+            <li><a class="dropdown-item" href="finance_report.html">Financial Reporting</a></li>
+            <li><a class="dropdown-item" href="valuations.html">Valuations</a></li>
+            <li><a class="dropdown-item" href="cfo.html">Virtual CFO Services</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown hover-dropdown">
+          <a class="nav-link dropdown-toggle" href="hire_team.html" id="teamDropdown">Build your team</a>
+          <ul class="dropdown-menu" aria-labelledby="teamDropdown">
+            <li><a class="dropdown-item" href="hire_book.html">Hire Bookkeeper</a></li>
+            <li><a class="dropdown-item" href="hire_taxreviewer.html">Hire Tax Reviewer</a></li>
+            <li><a class="dropdown-item" href="hire_staff_account.html">Hire Staff Accountant</a></li>
+            <li><a class="dropdown-item" href="hire_audit_support.html">Hire Audit Support Staff</a></li>
+            <li><a class="dropdown-item" href="hire_billing_ex.html">Hire AR/AP Billing Executive</a></li>
+            <li><a class="dropdown-item" href="hire_pay_exper.html">Hire Payroll Expert</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page Header -->
+<section class="bg-light text-center py-5 border-bottom">
+  <div class="container">
+    <h1 class="fw-bold" style="color: var(--teal-dark);">Meet Our Team</h1>
+    <p class="text-muted">Our mission is to become a trusted extension of our clients’ teams, enabling them to focus on growth while we take care of their financial processes.</p>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="container py-5">
+  
+  <!-- 1. Managing Director Premium Row -->
+  <div class="row mb-5 justify-content-center">
+    <div class="col-lg-10">
+      <div class="card shadow-sm md-spotlight-card p-4">
+        <div class="row align-items-center g-4">
+          <div class="col-md-4 text-center">
+            <!-- Replace with real image path later -->
+            <img src="managing_director.png" alt="Managing Director" class="md-image shadow-sm">
+          </div>
+          <div class="col-md-8">
+            <span class="text-uppercase small fw-bold tracking-widest" style="color: var(--teal-primary);">Executive Leadership</span>
+            <h2 class="fw-bold mt-1 mb-2" style="color: var(--teal-dark);">Charmi Shah</h2>
+            <h5 class="text-muted fw-normal mb-3">Founder and Managing Director</h5>
+            <p class="text-secondary leading-relaxed">
+              A CFA charterholder with a Master’s in Management from Bayes Business School, London, I have over five years of valuation experience with a renowned financial services firm, along with expertise in finance, accounting, and business analysis. I founded our offshore accounting firm to provide reliable, technology-driven bookkeeping and accounting solutions, helping businesses and accounting firms improve efficiency, accuracy, and scalability through a trusted offshore partnership.
+            </p>
+            <p class="text-secondary small">
+              <i>"Balancing operations with strategy transforms financial books from a tracking mechanism into an enterprise growth engine."</i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Title for Other Leaders -->
+  <div class="text-center mb-4 mt-5">
+    <h3 class="fw-bold" style="color: var(--teal-dark);">Management Team</h3>
+    <hr class="mx-auto" style="width: 60px; height: 3px; background-color: var(--teal-primary); opacity: 1;">
+  </div>
+
+  <!-- 2. Rest of the Leadership Grid -->
+  <div class="row g-4 justify-content-center">
+    
+    <!-- Operational Head -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm h-100 text-center p-4 team-card">
+        <div class="card-body">
+          <img src="team_member1.png" alt="Head of Operations" class="team-avatar mb-3">
+          <h5 class="fw-bold mb-1" style="color: var(--teal-dark);">[Name Name]</h5>
+          <p class="text-muted small mb-3">Head of Operations</p>
+          <p class="card-text text-secondary small">Supervises our offshore bookkeeping networks ensuring strict delivery timelines and processing data accuracy maps.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Valuation Strategy Lead -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm h-100 text-center p-4 team-card">
+        <div class="card-body">
+          <img src="team_member2.png" alt="Lead Appraiser" class="team-avatar mb-3">
+          <h5 class="fw-bold mb-1" style="color: var(--teal-dark);">[Name Name]</h5>
+          <p class="text-muted small mb-3">Director of Valuations</p>
+          <p class="card-text text-secondary small">Manages our appraisal modeling divisions, delivering audit-ready corporate valuations and capital tracking logs.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tax Compliance Lead -->
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-sm h-100 text-center p-4 team-card">
+        <div class="card-body">
+          <img src="team_member3.png" alt="Tax Advisor" class="team-avatar mb-3">
+          <h5 class="fw-bold mb-1" style="color: var(--teal-dark);">[Name Name]</h5>
+          <p class="text-muted small mb-3">Chief Tax Strategy Officer</p>
+          <p class="card-text text-secondary small">Maintains global cross-border tax alignment rules, overseeing compliance frameworks and preparation procedures.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-white text-center p-3" style="background-color: var(--teal-dark);">
+  <p class="mb-0">&copy; 2026 Spurt. All rights reserved.</p>
+</footer>
+
+<!-- Local JS File Fallback Script Link -->
+<script src="bootstrap.bundle.min.js" defer></script>
+</body>
+</html>
