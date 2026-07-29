@@ -1,0 +1,216 @@
+/* ==========================================================================
+   Weathercraft Trust Custom Stylesheet
+   ========================================================================== */
+
+:root {
+    --bg-primary: #0d0f12;       /* Deep Charcoal Midnight */
+    --bg-secondary: #161920;     /* Rich Obsidian Card Background */
+    --accent-amber: #dca54c;     /* Muted Amber Branding Color */
+    --text-light: #f3f4f6;       /* Clean Off-White */
+    --text-muted: #9ca3af;       /* Soft Ash Grey */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Inter', sans-serif;
+}
+
+/* Base Document Configuration */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-light);
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+    overflow-x: hidden;
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.text-accent {
+    color: var(--accent-amber);
+}
+
+/* Sticky Navigation Configuration */
+.navbar {
+    background-color: rgba(13, 15, 18, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.25rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    color: var(--text-light) !important;
+}
+
+.nav-link {
+    color: var(--text-muted) !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, 
+.nav-link.active {
+    color: var(--accent-amber) !important;
+}
+
+/* Hero Frame Display Layout */
+.hero-section {
+    padding: 12rem 0 8rem 0;
+    background: radial-gradient(circle at 80% 20%, rgba(220, 165, 76, 0.06) 0%, transparent 50%),
+                radial-gradient(circle at 10% 80%, rgba(30, 41, 59, 0.4) 0%, transparent 40%);
+    position: relative;
+}
+
+.hero-tagline {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+}
+
+/* Elegant Theme Button Elements */
+.btn-elegant-primary {
+    background-color: var(--accent-amber);
+    color: #000000;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    border: 1px solid var(--accent-amber);
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-elegant-primary:hover {
+    background-color: transparent;
+    color: var(--accent-amber);
+    transform: translateY(-2px);
+}
+
+.btn-elegant-outline {
+    background-color: transparent;
+    color: var(--text-light);
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-elegant-outline:hover {
+    border-color: var(--text-light);
+    transform: translateY(-2px);
+}
+
+/* Structural Components Grid Blocks */
+.section-padding {
+    padding: 7rem 0;
+}
+
+.elegant-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    padding: 2.5rem;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.elegant-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(220, 165, 76, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.icon-box {
+    font-size: 2rem;
+    color: var(--accent-amber);
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+/* Testimonial Typography Styles */
+.testimonial-text {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: rgba(243, 244, 246, 0.9);
+}
+
+/* Custom Accordion Override Styles */
+.accordion-item {
+    background-color: var(--bg-secondary) !important;
+    border: 1px solid rgba(255, 255, 255, 0.04) !important;
+    margin-bottom: 0.75rem;
+    border-radius: 6px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-light) !important;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    padding: 1.25rem 1.5rem;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--accent-amber) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+.accordion-body {
+    color: var(--text-muted);
+    line-height: 1.6;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Element Configuration */
+footer {
+    background-color: #07080a;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 4rem 0 2rem 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+footer h5 {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--accent-amber);
+}
+
+.social-link {
+    font-size: 1.25rem;
+    margin-right: 1rem;
+}

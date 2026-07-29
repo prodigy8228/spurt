@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Weathercraft Charitable Trust | Crafting Care, Changing Lives.</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+
+:root{
+--cream:#FFFDF9;
+--blush:#FCE9E8;
+--mint:#E7F5EE;
+--lavender:#F1ECFF;
+--sky:#EAF6FF;
+--peach:#FFF3E6;
+
+--primary:#7AA88B;
+--accent:#D68E92;
+--gold:#E6B97D;
+
+--text:#55545A;
+--heading:#42514B;
+--border:#ECECEC;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:var(--cream);
+font-family:'Nunito',sans-serif;
+color:var(--text);
+overflow-x:hidden;
+}
+
+h1,h2,h3,h4{
+font-family:'DM Serif Display',serif;
+color:var(--heading);
+}
+
+.navbar{
+background:rgba(255,253,249,.92);
+backdrop-filter:blur(14px);
+box-shadow:0 4px 20px rgba(0,0,0,.03);
+}
+
+.navbar-brand{
+font-family:'DM Serif Display',serif;
+font-size:1.8rem;
+color:var(--primary)!important;
+}
+
+.nav-link{
+font-weight:600;
+color:#666!important;
+}
+
+.nav-link:hover{
+color:var(--accent)!important;
+}
+
+.btn-main{
+background:linear-gradient(135deg,#F4B8B8,#E89AA2);
+border:none;
+color:white;
+padding:14px 34px;
+border-radius:50px;
+font-weight:700;
+transition:.35s;
+}
+
+.btn-main:hover{
+transform:translateY(-4px);
+box-shadow:0 18px 35px rgba(232,154,162,.25);
+}
+
+.btn-outline-soft{
+border:2px solid var(--primary);
+border-radius:50px;
+padding:13px 32px;
+color:var(--primary);
+font-weight:700;
+}
+
+.btn-outline-soft:hover{
+background:var(--primary);
+color:white;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+background:
+radial-gradient(circle at top right,#F8EAF0 0%,transparent 40%),
+radial-gradient(circle at bottom left,#E6F5EE 0%,transparent 40%),
+linear-gradient(135deg,#FFFDF9,#FFF8F5);
+}
+
+.hero h1{
+font-size:clamp(3rem,6vw,5.6rem);
+line-height:1.05;
+}
+
+.tagline{
+color:var(--accent);
+font-weight:700;
+letter-spacing:4px;
+text-transform:uppercase;
+font-size:.85rem;
+}
+
+.hero-card{
+background:white;
+padding:40px;
+border-radius:28px;
+box-shadow:0 20px 60px rgba(0,0,0,.05);
+}
+
+.section{
+padding:110px 0;
+}
+
+.section-title{
+font-size:3rem;
+}
+
+.card-soft{
+background:white;
+border:none;
+border-radius:24px;
+padding:35px;
+box-shadow:0 18px 40px rgba(0,0,0,.05);
+height:100%;
+transition:.35s;
+}
+
+.card-soft:hover{
+transform:translateY(-8px);
+}
+
+.icon{
+width:72px;
+height:72px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+margin-bottom:20px;
+}
+
+.icon1{background:var(--mint);}
+.icon2{background:var(--lavender);}
+.icon3{background:var(--sky);}
+
+.parallax{
+background:url("https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1600&q=80") center/cover fixed;
+height:420px;
+position:relative;
+}
+
+.parallax::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(125,168,139,.38);
+}
+
+.parallax-content{
+position:relative;
+z-index:2;
+color:white;
+}
+
+.testimonial{
+background:white;
+border-radius:24px;
+padding:35px;
+box-shadow:0 18px 40px rgba(0,0,0,.05);
+height:100%;
+}
+
+.accordion-item{
+border:none;
+margin-bottom:18px;
+border-radius:20px!important;
+overflow:hidden;
+box-shadow:0 12px 25px rgba(0,0,0,.04);
+}
+
+.accordion-button{
+padding:22px;
+font-weight:700;
+background:white;
+}
+
+.accordion-button:not(.collapsed){
+background:#FFF3F4;
+color:var(--accent);
+}
+
+.contact-box{
+background:white;
+padding:50px;
+border-radius:30px;
+box-shadow:0 20px 60px rgba(0,0,0,.05);
+}
+
+.form-control{
+border-radius:15px;
+padding:15px;
+border:1px solid var(--border);
+}
+
+.form-control:focus{
+box-shadow:none;
+border-color:var(--accent);
+}
+
+.cta{
+background:linear-gradient(135deg,#FCECEC,#F3F8F4);
+border-radius:35px;
+padding:70px;
+}
+
+footer{
+background:#FAF5EF;
+}
+
+.social a{
+font-size:1.2rem;
+margin:0 10px;
+color:#888;
+}
+
+.social a:hover{
+color:var(--accent);
+}
+
+.fade-up{
+opacity:0;
+transform:translateY(35px);
+transition:1s;
+}
+
+.fade-up.show{
+opacity:1;
+transform:none;
+}
+
+@media(max-width:992px){
+.parallax{
+background-attachment:scroll;
+}
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+padding-top:100px;
+}
+
+.section{
+padding:80px 0;
+}
+
+.section-title{
+font-size:2.3rem;
+}
+
+.cta{
+padding:45px 25px;
+}
+
+.contact-box{
+padding:35px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">Weathercraft Charitable Trust</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+<li class="nav-item"><a class="nav-link" href="#stories">Testimonials</a></li>
+<li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-7 fade-up">
+
+<div class="tagline mb-3">
+Crafting Care, Changing Lives.
+</div>
+
+<h1>
+Kindness Creates
+Beautiful Second Chances.
+</h1>
+
+<p class="lead mt-4 mb-5">
+Weathercraft Charitable Trust rescues, heals, feeds, and shelters stray animals and injured birds—bringing hope, dignity, and compassionate care to every life we touch.
+</p>
+
+<a href="#contact" class="btn btn-main me-3">
+Become a Volunteer
+</a>
+
+<a href="#about" class="btn btn-outline-soft">
+Learn More
+</a>
+
+</div>
+
+<div class="col-lg-5 fade-up">
+
+<div class="hero-card">
+
+<h3>Every Life Matters</h3>
+
+<p>
+Together we can provide rescue, medical care, nourishing meals,
+and safe shelter for vulnerable animals who have nowhere else to turn.
+</p>
+
+<hr>
+
+<div class="row text-center">
+
+<div class="col">
+<h3>24/7</h3>
+<small>Rescue</small>
+</div>
+
+<div class="col">
+<h3>❤</h3>
+<small>Care</small>
+</div>
+
+<div class="col">
+<h3>∞</h3>
+<small>Hope</small>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="mission">
+
+<div class="container">
+
+<div class="text-center mb-5 fade-up">
+<h2 class="section-title">How We Help</h2>
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4 fade-up">
+
+<div class="card-soft">
+
+<div class="icon icon1">
+🐾
+</div>
+
+<h3>Animal Rescue</h3>
+
+<p>
+Rapid rescue operations for injured, abandoned,
+and neglected animals needing immediate assistance.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4 fade-up">
+
+<div class="card-soft">
+
+<div class="icon icon2">
+🩺
+</div>
+
+<h3>Medical Treatment</h3>
+
+<p>
+Providing emergency healthcare, recovery support,
+and rehabilitation for rescued animals.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4 fade-up">
+
+<div class="card-soft">
+
+<div class="icon icon3">
+🌿
+</div>
+
+<h3>Food & Shelter</h3>
+
+<p>
+Nutritious meals and loving shelter spaces where every rescued life can recover safely.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="parallax d-flex align-items-center">
+
+<div class="container text-center parallax-content">
+
+<h2 class="display-4">
+Small Acts of Kindness Create Lifelong Hope.
+</h2>
+
+<p class="lead mt-3">
+Together, we can transform fear into comfort and suffering into healing.
+</p>
+
+</div>
+
+</section>
+
+<section class="section" id="about">
+
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-6 fade-up">
+
+<img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80"
+class="img-fluid rounded-5 shadow">
+
+</div>
+
+<div class="col-lg-6 fade-up">
+
+<h2 class="section-title">
+About Our Trust
+</h2>
+
+<p>
+Every day, thousands of stray animals and birds suffer silently from hunger, accidents, and neglect.
+At Weathercraft Charitable Trust, we refuse to look away.
+</p>
+
+<p>
+Through immediate medical intervention, structured feeding programs,
+and dedicated shelter spaces, we transform pain into hope.
+We give a voice to the voiceless, ensuring that every creature receives
+the love, care, and protection they deserve.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="stories">
+
+<div class="container">
+
+<div class="text-center mb-5 fade-up">
+<h2 class="section-title">Words of Hope</h2>
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4 fade-up">
+<div class="testimonial">
+<p class="fst-italic">
+"Every rescue reminds us that compassion truly has the power to heal."
+</p>
+<strong>Volunteer</strong>
+</div>
+</div>
+
+<div class="col-lg-4 fade-up">
+<div class="testimonial">
+<p class="fst-italic">
+"Watching rescued animals recover is one of life's greatest rewards."
+</p>
+<strong>Community Supporter</strong>
+</div>
+</div>
+
+<div class="col-lg-4 fade-up">
+<div class="testimonial">
+<p class="fst-italic">
+"This trust gives forgotten animals another chance to experience love."
+</p>
+<strong>Donor</strong>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="faq">
+
+<div class="container">
+
+<div class="text-center mb-5">
+<h2 class="section-title">Frequently Asked Questions</h2>
+</div>
+
+<div class="accordion">
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#a1">
+Which animals do you help?
+</button>
+</h2>
+<div id="a1" class="accordion-collapse collapse show">
+<div class="accordion-body">
+We care for stray dogs, cows, goats, injured birds, and other vulnerable animals needing urgent help.
+</div>
+</div>
+</div>
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a2">
+Can I volunteer?
+</button>
+</h2>
+<div id="a2" class="accordion-collapse collapse">
+<div class="accordion-body">
+Yes. Volunteers are always welcome to support rescue, feeding, fundraising, and awareness initiatives.
+</div>
+</div>
+</div>
+
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a3">
+How are donations used?
+</button>
+</h2>
+<div id="a3" class="accordion-collapse collapse">
+<div class="accordion-body">
+Donations support rescue missions, veterinary care, food, shelters, medicines, and rehabilitation.
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="contact">
+
+<div class="container">
+
+<div class="contact-box">
+
+<div class="row">
+
+<div class="col-lg-5">
+
+<h2 class="section-title">
+Let's Make a Difference
+</h2>
+
+<p>
+Reach out if you'd like to volunteer, collaborate, or support our mission.
+</p>
+
+<p><i class="bi bi-envelope-fill"></i> info@weathercrafttrust.org</p>
+<p><i class="bi bi-telephone-fill"></i> +91 98765 43210</p>
+
+</div>
+
+<div class="col-lg-7">
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<input class="form-control" placeholder="Name">
+</div>
+
+<div class="col-md-6 mb-3">
+<input class="form-control" placeholder="Email">
+</div>
+
+<div class="col-12 mb-3">
+<input class="form-control" placeholder="Subject">
+</div>
+
+<div class="col-12 mb-4">
+<textarea class="form-control" rows="5" placeholder="Message"></textarea>
+</div>
+
+<div class="col-12">
+<button class="btn btn-main">
+Send Message
+</button>
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="cta text-center">
+
+<h2 class="display-5 mb-4">
+Together, We Can Change Lives.
+</h2>
+
+<p class="lead mb-4">
+Join Weathercraft Charitable Trust in building a kinder future for every stray animal and injured bird.
+</p>
+
+<a href="#contact" class="btn btn-main btn-lg">
+Support Our Mission
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="py-5">
+
+<div class="container text-center">
+
+<h3>Weathercraft Charitable Trust</h3>
+
+<p>
+Crafting Care, Changing Lives.
+</p>
+
+<div class="social my-4">
+
+<a href="#"><i class="bi bi-facebook"></i></a>
+<a href="#"><i class="bi bi-instagram"></i></a>
+<a href="#"><i class="bi bi-twitter-x"></i></a>
+<a href="#"><i class="bi bi-envelope-fill"></i></a>
+
+</div>
+
+<p class="small mb-0">
+© 2026 Weathercraft Charitable Trust. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+},{threshold:.15});
+
+document.querySelectorAll(".fade-up").forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>

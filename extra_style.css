@@ -1,0 +1,119 @@
+/* Core Palette Overrides */
+:root {
+  --teal-primary: #008080;
+  --teal-dark: #003333;
+  --teal-light: #e0f2f1;
+  --teal-action: #00a8a8;
+  --text-dark: #1a2525;
+  --text-muted: #5a738e;
+}
+
+/* Navbar & Footer Styling */
+.bg-dark {
+  background-color: var(--teal-dark) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: var(--teal-light);
+}
+
+/* Dropdown Customization */
+.dropdown-menu {
+  background-color: #ffffff;
+  border-top: 3px solid var(--teal-primary);
+}
+
+.dropdown-item:hover {
+  background-color: var(--teal-light);
+  color: var(--teal-dark);
+}
+
+/* Primary Button Styling */
+.btn-primary {
+  background-color: var(--teal-primary) !important;
+  border-color: var(--teal-primary) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--teal-action) !important;
+  border-color: var(--teal-action) !important;
+}
+
+
+/* Badges and Subtitles */
+.bg-secondary {
+  background-color: var(--teal-primary) !important;
+}
+
+h1, h2, h6 {
+  color: var(--teal-dark) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+/* Full Background Hero with Overlay */
+.hero-section {
+  position: relative;
+  height: 300px;
+  background: url('background.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Full Background Hero with Overlay */
+.hero-section {
+  position: relative;
+  height: 300px;
+  background: url('background.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* The Teal Overlay Layer */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(204, 230, 230, 0.85); 
+  z-index: 1;
+}
+
+/* Pushes text content above the overlay layer */
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  color: #003333 !important; /* Deep midnight teal heading */
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+
+.hero-section p.lead i {
+  color: #e0f2f1 !important; /* Light teal text for contrast */
+}
+
+/* Desktop Hover Navigation Dropdowns */
+@media (min-width: 992px) {
+  .navbar-nav .hover-dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Smooth alignment transition */
+  }
+}
