@@ -124,3 +124,13 @@ h1, h2, h6 {
     font-size: 1rem !important; /* Scale down subtitle text */
   }
 }
+/* Mobile Dropdown Spacing Fix */
+@media (max-width: 991.98px) {
+  .navbar-nav .dropdown-menu {
+    position: static; /* Stack menus inline instead of floating */
+    float: none;
+    background-color: var(--teal-light); /* Better contrast for mobile submenus */
+    border: none;
+    padding-left: 15px; /* Indent sub-items slightly */
+  }
+}
