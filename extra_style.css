@@ -127,10 +127,22 @@ h1, h2, h6 {
 /* Mobile Dropdown Spacing Fix */
 @media (max-width: 991.98px) {
   .navbar-nav .dropdown-menu {
-    position: static; /* Stack menus inline instead of floating */
+    position: static !important; /* Forces layout to stack inline */
     float: none;
-    background-color: var(--teal-light); /* Better contrast for mobile submenus */
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle dark container tint */
     border: none;
-    padding-left: 15px; /* Indent sub-items slightly */
+    padding-left: 15px; /* Indents child items for clean hierarchy */
+    box-shadow: none;
   }
+  
+  .navbar-nav .dropdown-item {
+    color: rgba(255, 255, 255, 0.8) !important; /* Ensures text is visible against dark nav */
+    padding: 8px 0;
+  }
+
+  .navbar-nav .dropdown-item:hover {
+    background-color: transparent; /* Removes heavy desktop highlights */
+    color: var(--teal-light) !important;
+  }
+  
 }
