@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spurt - Schedule a Call</title>
+  <!-- Bootstrap CSS -->
+  <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    defer></script>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="extra_style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <style>
+    .email-phone-location-section {
+      margin-bottom: 50px;
+      margin-top: 50px;
+
+      .email-phone-location-inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+
+        .box-wrapper {
+          border-radius: 20px;
+          padding: 50px;
+
+          &:nth-child(1) {
+            background-color: #fff9e4;
+          }
+
+          &:nth-child(2) {
+
+            background-color: #e4f6ff;
+
+          }
+
+          &:nth-child(3) {
+            background-color: #ffece4;
+
+            .link-wrapper {
+              max-width: 80%;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+
+              @media(max-width: 575px) {
+                max-width: 100%;
+              }
+            }
+          }
+
+          .icon-wrapper {
+            width: 72px;
+            height: 70px;
+            border-radius: 16px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+            img {
+              width: 36px;
+            }
+          }
+
+          h3 {
+            color: #1e4d7b;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 12px;
+          }
+
+          .link-wrapper {
+            p {
+              margin: 0;
+              color: #2e2e2e;
+              font-size: 16px;
+
+              a {
+                text-decoration: none;
+                color: #2e2e2e;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                  color: #1e4d7b;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  </style>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="spurtlogo1.png" height="60px" width="200px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <!-- Company Dropdown (Now Clickable) -->
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="aboutus.html" id="companyDropdown">
+              Company
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="companyDropdown" style="margin-top:0px;">
+              <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+              <li><a class="dropdown-item" href="whyspurt.html">Why Spurt</a></li>
+              <li><a class="dropdown-item" href="ourteam.html">Our Team</a></li>
+              <li><a class="dropdown-item" href="career.html">Careers</a></li>
+            </ul>
+          </li>
+
+          <!-- Services Dropdown (Now Clickable) -->
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="margin-top:0px;">
+              <li><a class="dropdown-item" href="bookkeeping.html">Offshore Bookkeeping</a></li>
+              <li><a class="dropdown-item" href="tax_preparation.html">Tax Preparation</a></li>
+              <li><a class="dropdown-item" href="valuations.html">Valuations</a></li>
+              <li><a class="dropdown-item" href="payroll.html">Payroll Management</a></li>
+              <li><a class="dropdown-item" href="finance_report.html">Financial Reporting</a></li>
+
+              <li><a class="dropdown-item" href="cfo.html">Virtual CFO Services</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="case-studies.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Schedule a Call</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+
+  <!-- Parent Ecosystem Legacy Section -->
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+
+      <h1 class="display-4"><b>Get in Touch</b></h1>
+      <p class="lead"><i>Professional Support for Modern Accounting Firms</i></p>
+      <p>We support CPA firms, accounting professionals, and growing businesses with dependable outsourcing solutions
+        tailored for long-term success. Our experienced team delivers accuracy, flexibility, and seamless collaboration
+        across accounting, taxation, and compliance functions.</p>
+
+
+    </div>
+  </section>
+
+
+  <section class="map-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14686.641885653471!2d72.50252756977537!3d23.036235500000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848ac8a7faf3%3A0x9b82d43c93de4db7!2sProdigy%20Software%20Limited!5e0!3m2!1sen!2sin!4v1581945854082!5m2!1sen!2sin"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="email-phone-location-section">
+    <div class="container">
+      <div class="email-phone-location-inner">
+        <div class="box-wrapper">
+          <div class="icon-wrapper">
+            <img src="email.png" alt="">
+          </div>
+          <h3>Email</h3>
+          <div class="link-wrapper">
+            <p><a href="mailto:info@spurt.com">info@spurt.com</a></p>
+            <p><a href="mailto:prashil@sprinty.in">prashil@sprinty.in</a></p>
+            <p><a href="mailto:charmi@sprinty.in">charmi@sprinty.in</a></p>
+
+          </div>
+        </div>
+        <div class="box-wrapper">
+          <div class="icon-wrapper">
+            <img src="phone.png" alt="">
+          </div>
+          <h3>Phone</h3>
+          <div class="link-wrapper">
+            <p>
+              India: <a href="tel:+919909915140">+91 99099 15140</a>
+            </p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="tel:+916355514686">+91 63555 14686</a>
+            </p>
+          </div>
+        </div>
+        <div class="box-wrapper">
+          <div class="icon-wrapper">
+            <img src="location.png" alt="">
+          </div>
+          <h3>Location</h3>
+          <!-- <div class="link-wrapper"> -->
+          <div>
+            <p>
+              <strong>Spurt Limited</strong><br>
+              The First Floor, Shapath II,<br>
+              Sarkhej - Gandhinagar Highway,<br>
+              Opp. Rajpath Rangoli Road,<br>
+              Ahmedabad, Gujarat 380015.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Contact Us Section -->
+  <section class="contact-section bg-light py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Let’s Understand Your Needs</h2>
+      <p class="text-center text-muted mb-5">Please fill out the form below so our team can get back to you with the
+        best solution</p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2026 Spurt. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Select all parent links inside the hover dropdowns
+      const dropdownLinks = document.querySelectorAll('.hover-dropdown > .dropdown-toggle');
+
+      dropdownLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          // Only execute this logic on mobile screens (less than 992px)
+          if (window.innerWidth < 992) {
+            const parentLi = this.parentElement;
+            const isOpen = parentLi.classList.contains('show');
+
+            if (!isOpen) {
+              // Prevent navigating to the .html page on the first tap
+              e.preventDefault();
+
+              // Close any other open dropdowns first
+              document.querySelectorAll('.hover-dropdown').forEach(li => li.classList.remove('show'));
+              document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.remove('show'));
+
+              // Open current dropdown
+              parentLi.classList.add('show');
+              this.nextElementSibling.classList.add('show');
+              this.setAttribute('aria-expanded', 'true');
+            }
+            // If it is already open, the second tap will naturally follow the href link
+          }
+        });
+      });
+
+      // Close dropdowns if user clicks anywhere else on the screen
+      document.addEventListener('click', function (e) {
+        if (window.innerWidth < 992 && !e.target.closest('.hover-dropdown')) {
+          document.querySelectorAll('.hover-dropdown').forEach(li => li.classList.remove('show'));
+          document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.remove('show'));
+        }
+      });
+    });
+
+  </script>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevents the page from reloading
+
+      // Grab the values from the form fields
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Set recipient, subject, and formatted body
+      const recipient = 'info@spurt.com';
+      const subject = encodeURIComponent(`New Message from ${name}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\n` +
+        `Email: ${email}\n\n` +
+        `Message:\n${message}`
+      );
+
+      // Open the default email client
+      window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+    });
+  </script>
+
+</body>
+
+</html>
