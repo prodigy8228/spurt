@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,17 +25,17 @@
     padding: 28px 16px;
     } */
 
-	.career-banner {
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    background: #f8f9fa;
-    color: #212529;
-    text-align: center;
-    padding: 28px 16px;
-    margin: 0;
-    overflow: hidden;
-	}
+    .career-banner {
+      position: relative;
+      width: 100%;
+      box-sizing: border-box;
+      background: #f8f9fa;
+      color: #212529;
+      text-align: center;
+      padding: 28px 16px;
+      margin: 0;
+      overflow: hidden;
+    }
 
     /* .career-banner::before,
     .career-banner::after {
@@ -60,24 +61,25 @@
     } */
 
     .career-banner h1 {
-    color: #212529;
-    font-weight: 500;
+      color: #212529;
+      font-weight: 500;
     }
 
- .career-brand-mark {
-    width: 86px;
-    height: 86px;
-    margin: -42px auto 0;
-    position: relative;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #212529; /* Same as navbar bg-dark */
-    border: 1px solid #212529;
-    border-radius: 4px;
-    box-shadow: 0 3px 12px rgba(0,0,0,.10);
-}
+    .career-brand-mark {
+      width: 86px;
+      height: 86px;
+      margin: -42px auto 0;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #212529;
+      /* Same as navbar bg-dark */
+      border: 1px solid #212529;
+      border-radius: 4px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, .10);
+    }
 
     .career-brand-mark img {
       display: block;
@@ -120,7 +122,7 @@
       margin-bottom: 22px;
     }
 
-    .career-field > label,
+    .career-field>label,
     .career-field legend {
       display: block;
       width: 100%;
@@ -153,13 +155,13 @@
       background: #fff;
       color: #333;
       font-size: .88rem;
-      box-shadow: inset 0 1px 2px rgba(0,0,0,.025);
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, .025);
     }
 
     .career-input:focus {
       outline: none;
       border-color: #8b9bb8;
-      box-shadow: 0 0 0 3px rgba(88,112,153,.12);
+      box-shadow: 0 0 0 3px rgba(88, 112, 153, .12);
     }
 
     .career-upload {
@@ -261,111 +263,108 @@
     } */
 
 
-	@media (max-width: 575px) {
-    .career-banner {
+    @media (max-width: 575px) {
+      .career-banner {
         width: 100%;
         min-height: auto;
         margin-top: 0;
         padding: 24px 12px;
         box-sizing: border-box;
-    }
+      }
 
-    .career-brand-mark {
+      .career-brand-mark {
         width: 76px;
         height: 76px;
         margin-top: -36px;
-    }
+      }
 
-    .career-brand-mark img {
+      .career-brand-mark img {
         width: 68px;
-    }
+      }
 
-    .career-form-wrap {
+      .career-form-wrap {
         margin-top: 17px;
         margin-bottom: 48px;
-    }
+      }
 
-    .career-field > label,
-    .career-field legend {
+      .career-field>label,
+      .career-field legend {
         font-size: .98rem;
+      }
     }
-} 
 
 
- html, body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    overflow-x: hidden;
-}
+    html,
+    body {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      overflow-x: hidden;
+    }
 
-.career-page {
-    width: 100%;
-    overflow-x: hidden;
-}
+    .career-page {
+      width: 100%;
+      overflow-x: hidden;
+    }
 
-.career-page main {
-    width: 100%;
-} 
-
-
+    .career-page main {
+      width: 100%;
+    }
   </style>
 </head>
 
 <body class="career-page">
-
-  <!-- Navbar: retained from your existing About Us page -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img src="spurtlogo1.png" height="60px" width="200px" />
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" aria-controls="navbarNav" 
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        
-        <!-- Company Dropdown (Now Clickable) -->
-        <li class="nav-item dropdown hover-dropdown">
-          <a class="nav-link dropdown-toggle" href="aboutus.html" id="companyDropdown">
-            Company
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="companyDropdown" style="margin-top:0px;">
-            <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
-            <li><a class="dropdown-item" href="whyspurt.html">Why Spurt</a></li>
-            <li><a class="dropdown-item" href="ourteam.html">Our Team</a></li>
-            <li><a class="dropdown-item" href="career.html">Careers</a></li>
-          </ul>
-        </li>
-        
-        <!-- Services Dropdown (Now Clickable) -->
-        <li class="nav-item dropdown hover-dropdown">
-          <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown">
-            Services
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="margin-top:0px;">
-            <li><a class="dropdown-item" href="bookkeeping.html">Offshore Bookkeeping</a></li>
-            <li><a class="dropdown-item" href="tax_preparation.html">Tax Preparation</a></li>
-            <li><a class="dropdown-item" href="valuations.html">Valuations</a></li>
-            <li><a class="dropdown-item" href="payroll.html">Payroll Management</a></li>
-            <li><a class="dropdown-item" href="finance_report.html">Financial Reporting</a></li>
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="spurtlogo1.png" height="60px" width="200px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
 
-            <li><a class="dropdown-item" href="cfo.html">Virtual CFO Services</a></li>
-          </ul>
-        </li>
-        
-       
-        <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-        <li class="nav-item"><a class="nav-link" href="contactus.html">Schedule a Call</a></li>
-      </ul>
+          <!-- Company Dropdown (Now Clickable) -->
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="aboutus.html" id="companyDropdown">
+              Company
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="companyDropdown" style="margin-top:0px;">
+              <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+              <li><a class="dropdown-item" href="whyspurt.html">Why Spurt</a></li>
+              <li><a class="dropdown-item" href="ourteam.html">Our Team</a></li>
+              <li><a class="dropdown-item" href="career.html">Careers</a></li>
+            </ul>
+          </li>
+
+          <!-- Services Dropdown (Now Clickable) -->
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="margin-top:0px;">
+              <li><a class="dropdown-item" href="bookkeeping.html">Offshore Bookkeeping</a></li>
+              <li><a class="dropdown-item" href="tax_preparation.html">Tax Preparation</a></li>
+              <li><a class="dropdown-item" href="valuations.html">Valuations</a></li>
+              <li><a class="dropdown-item" href="payroll.html">Payroll Management</a></li>
+              <li><a class="dropdown-item" href="finance_report.html">Financial Reporting</a></li>
+
+              <li><a class="dropdown-item" href="cfo.html">Virtual CFO Services</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="case-studies.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Schedule a Call</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-
+  </nav>
 
   <main>
     <!-- Reference-style banner -->
@@ -373,7 +372,7 @@
       <h1>Highly Skilled Offshore Accounting Talent On Demand</h1>
     </section>
 
-    
+
     <!-- Spurt logo replaces the reference company's logo -->
     <!-- <div class="career-brand-mark">
       <img src="spurtlogo1.png" alt="Spurt Limited">
@@ -392,26 +391,25 @@
       <form id="careerApplicationForm">
         <div class="career-field">
           <label for="applicantName">What's Your Name?<span class="required-mark">*</span></label>
-          <input class="career-input" type="text" id="applicantName" name="applicantName"
-                 placeholder="Your answer" autocomplete="name" required>
+          <input class="career-input" type="text" id="applicantName" name="applicantName" placeholder="Your answer"
+            autocomplete="name" required>
         </div>
 
         <div class="career-field">
           <label for="applicantEmail">What's Your Email ID?<span class="required-mark">*</span></label>
-          <input class="career-input" type="email" id="applicantEmail" name="applicantEmail"
-                 placeholder="Your answer" autocomplete="email" required>
+          <input class="career-input" type="email" id="applicantEmail" name="applicantEmail" placeholder="Your answer"
+            autocomplete="email" required>
         </div>
 
         <div class="career-field">
           <label for="contactNumber">What's Your Contact Number?<span class="required-mark">*</span></label>
-          <input class="career-input" type="tel" id="contactNumber" name="contactNumber"
-                 placeholder="Your answer" autocomplete="tel" required>
+          <input class="career-input" type="tel" id="contactNumber" name="contactNumber" placeholder="Your answer"
+            autocomplete="tel" required>
         </div>
 
         <div class="career-field">
           <label for="resume">Could You Upload Your Resume?<span class="required-mark">*</span></label>
-          <input class="career-upload" type="file" id="resume" name="resume"
-                 accept=".pdf,.doc,.docx" required>
+          <input class="career-upload" type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
           <span class="career-upload-note">Accepted formats: PDF, DOC, DOCX. Size limit: 5 MB.</span>
         </div>
 
@@ -424,8 +422,10 @@
             </a>)
           </span>
           <div class="career-options">
-            <label class="career-option"><input type="radio" name="workMode" value="Work From Office (Ahmedabad Location)" required>Work From Office (Ahmedabad Location)</label>
-            <label class="career-option"><input type="radio" name="workMode" value="Work From Home">Work From Home</label>
+            <label class="career-option"><input type="radio" name="workMode"
+                value="Work From Office (Ahmedabad Location)" required>Work From Office (Ahmedabad Location)</label>
+            <label class="career-option"><input type="radio" name="workMode" value="Work From Home">Work From
+              Home</label>
             <label class="career-option"><input type="radio" name="workMode" value="Hybrid">Hybrid</label>
           </div>
         </fieldset>
@@ -433,20 +433,35 @@
         <fieldset class="career-field">
           <legend>What Is Position You Are Applying For?<span class="required-mark">*</span></legend>
           <div class="career-options">
-            <label class="career-option"><input type="radio" name="position" value="Bookkeeper (USA Accounting Team)" required>Bookkeeper (USA Accounting Team)</label>
-            <label class="career-option"><input type="radio" name="position" value="Accountant (USA Accounting Team)">Accountant (USA Accounting Team)</label>
-            <label class="career-option"><input type="radio" name="position" value="Senior Accountant (USA Accounting Team)">Senior Accountant (USA Accounting Team)</label>
-            <label class="career-option"><input type="radio" name="position" value="Team Leader (USA Accounting Team)">Team Leader (USA Accounting Team)</label>
-            <label class="career-option"><input type="radio" name="position" value="Senior Manager (USA Accounting Team)">Senior Manager (USA Accounting Team)</label>
-            <label class="career-option"><input type="radio" name="position" value="Tax Preparer (USA Tax Team)">Tax Preparer (USA Tax Team)</label>
-            <label class="career-option"><input type="radio" name="position" value="Tax Reviewer (USA Tax Team)">Tax Reviewer (USA Tax Team)</label>
-            <label class="career-option"><input type="radio" name="position" value="Tax Manager (USA Tax Team)">Tax Manager (USA Tax Team)</label>
-            <label class="career-option"><input type="radio" name="position" value="Social Media Marketing (Intern)">Social Media Marketing (Intern)</label>
-            <label class="career-option"><input type="radio" name="position" value="Human Resource Manager">Human Resource Manager</label>
-            <label class="career-option"><input type="radio" name="position" value="Business Development Manager">Business Development Manager</label>
-            <label class="career-option"><input type="radio" name="position" value="Bookkeeper (Australia Accounting Team)">Bookkeeper (Australia Accounting Team)</label>
-            <label class="career-option"><input type="radio" name="position" value="Accountant (Australia Accounting Team)">Accountant (Australia Accounting Team)</label>
-            <label class="career-option"><input type="radio" name="position" value="Senior Accountant (Australia Accounting Team)">Senior Accountant (Australia Accounting Team)</label>
+            <label class="career-option"><input type="radio" name="position" value="Bookkeeper (USA Accounting Team)"
+                required>Bookkeeper (USA Accounting Team)</label>
+            <label class="career-option"><input type="radio" name="position"
+                value="Accountant (USA Accounting Team)">Accountant (USA Accounting Team)</label>
+            <label class="career-option"><input type="radio" name="position"
+                value="Senior Accountant (USA Accounting Team)">Senior Accountant (USA Accounting Team)</label>
+            <label class="career-option"><input type="radio" name="position"
+                value="Team Leader (USA Accounting Team)">Team Leader (USA Accounting Team)</label>
+            <label class="career-option"><input type="radio" name="position"
+                value="Senior Manager (USA Accounting Team)">Senior Manager (USA Accounting Team)</label>
+            <label class="career-option"><input type="radio" name="position" value="Tax Preparer (USA Tax Team)">Tax
+              Preparer (USA Tax Team)</label>
+            <label class="career-option"><input type="radio" name="position" value="Tax Reviewer (USA Tax Team)">Tax
+              Reviewer (USA Tax Team)</label>
+            <label class="career-option"><input type="radio" name="position" value="Tax Manager (USA Tax Team)">Tax
+              Manager (USA Tax Team)</label>
+            <label class="career-option"><input type="radio" name="position"
+                value="Social Media Marketing (Intern)">Social Media Marketing (Intern)</label>
+            <label class="career-option"><input type="radio" name="position" value="Human Resource Manager">Human
+              Resource Manager</label>
+            <label class="career-option"><input type="radio" name="position"
+                value="Business Development Manager">Business Development Manager</label>
+            <label class="career-option"><input type="radio" name="position"
+                value="Bookkeeper (Australia Accounting Team)">Bookkeeper (Australia Accounting Team)</label>
+            <label class="career-option"><input type="radio" name="position"
+                value="Accountant (Australia Accounting Team)">Accountant (Australia Accounting Team)</label>
+            <label class="career-option"><input type="radio" name="position"
+                value="Senior Accountant (Australia Accounting Team)">Senior Accountant (Australia Accounting
+              Team)</label>
           </div>
         </fieldset>
 
@@ -464,21 +479,22 @@
         <div class="career-field">
           <label for="noticePeriod">What's Your Notice Period? (days)<span class="required-mark">*</span></label>
           <span class="career-help">(Write 0 if doesn't apply)</span>
-          <input class="career-input" type="number" id="noticePeriod" name="noticePeriod"
-                 min="0" step="1" placeholder="Your answer" required>
+          <input class="career-input" type="number" id="noticePeriod" name="noticePeriod" min="0" step="1"
+            placeholder="Your answer" required>
         </div>
 
         <div class="career-field">
-          <label for="currentCompensation">What Is Your Current Compensation? (Annual INR)<span class="required-mark">*</span></label>
+          <label for="currentCompensation">What Is Your Current Compensation? (Annual INR)<span
+              class="required-mark">*</span></label>
           <span class="career-help">(Write 0 if doesn't apply)</span>
-          <input class="career-input" type="number" id="currentCompensation" name="currentCompensation"
-                 min="0" step="1" placeholder="Your answer" required>
+          <input class="career-input" type="number" id="currentCompensation" name="currentCompensation" min="0" step="1"
+            placeholder="Your answer" required>
         </div>
 
         <div class="career-field">
           <label for="expectedCompensation">What Is Your Expected Compensation? (Annual INR)</label>
-          <input class="career-input" type="number" id="expectedCompensation" name="expectedCompensation"
-                 min="0" step="1" placeholder="Your answer">
+          <input class="career-input" type="number" id="expectedCompensation" name="expectedCompensation" min="0"
+            step="1" placeholder="Your answer">
         </div>
 
         <button type="submit" class="career-submit">Submit</button>
@@ -552,4 +568,5 @@
     });
   </script>
 </body>
+
 </html>
