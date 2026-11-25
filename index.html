@@ -1,195 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Spurt Homepage</title>
-  <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script rel="preconnect" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    defer></script>
   <link href="bootstrap.min.css" rel="stylesheet">
   <link href="extra_style.css" rel="stylesheet">
 
 </head>
+
 <body>
 
-<style>
-/* Foundation Stats Section */
-.foundation-stats-section {
-  background-color: #fbf5ed;
-}
+  <style>
+    /* Foundation Stats Section */
+    .foundation-stats-section {
+      background-color: #fbf5ed;
+    }
 
-.stats-card {
-  border: 1px solid #ede6dc !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02) !important;
-}
+    .stats-card {
+      border: 1px solid #ede6dc !important;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02) !important;
+    }
 
-.text-orange {
-  color: #c19a53;
-}
+    .text-orange {
+      color: #c19a53;
+    }
 
-.stat-title {
-  color: #003333;
-  font-size: 1.75rem;
-}
+    .stat-title {
+      color: #003333;
+      font-size: 1.75rem;
+    }
 
-/* Responsive Dividers between Columns */
-@media (min-width: 768px) {
-  .stat-divider {
-    border-right: 1px solid #ede6dc;
-  }
-}
+    /* Responsive Dividers between Columns */
+    @media (min-width: 768px) {
+      .stat-divider {
+        border-right: 1px solid #ede6dc;
+      }
+    }
 
-@media (max-width: 767.98px) {
-  .stat-divider {
-    border-bottom: 1px solid #ede6dc;
-  }
-}
+    @media (max-width: 767.98px) {
+      .stat-divider {
+        border-bottom: 1px solid #ede6dc;
+      }
+    }
 
-/* Orange Pill Button */
-.btn-orange {
-  background-color: #f26522;
-  border-color: #f26522;
-  color: #ffffff;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
+    /* Orange Pill Button */
+    .btn-orange {
+      background-color: #f26522;
+      border-color: #f26522;
+      color: #ffffff;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
 
-.btn-orange:hover {
-  background-color: #d95314;
-  border-color: #d95314;
-  color: #ffffff;
-  transform: translateY(-1px);
-}
-</style>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img src="spurtlogo1.png" height="60px" width="200px" />
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" aria-controls="navbarNav" 
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        
-        <!-- Company Dropdown (Now Clickable) -->
-        <li class="nav-item dropdown hover-dropdown">
-          <a class="nav-link dropdown-toggle" href="aboutus.html" id="companyDropdown">
-            Company
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="companyDropdown" style="margin-top:0px;">
-            <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
-            <li><a class="dropdown-item" href="whyspurt.html">Why Spurt</a></li>
-            <li><a class="dropdown-item" href="ourteam.html">Our Team</a></li>
-            <li><a class="dropdown-item" href="career.html">Careers</a></li>
-          </ul>
-        </li>
-        
-        <!-- Services Dropdown (Now Clickable) -->
-        <li class="nav-item dropdown hover-dropdown">
-          <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown">
-            Services
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="margin-top:0px;">
-            <li><a class="dropdown-item" href="bookkeeping.html">Offshore Bookkeeping</a></li>
-            <li><a class="dropdown-item" href="tax_preparation.html">Tax Preparation</a></li>
-            <li><a class="dropdown-item" href="valuations.html">Valuations</a></li>
-            <li><a class="dropdown-item" href="payroll.html">Payroll Management</a></li>
-            <li><a class="dropdown-item" href="finance_report.html">Financial Reporting</a></li>
+    .btn-orange:hover {
+      background-color: #d95314;
+      border-color: #d95314;
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
 
-            <li><a class="dropdown-item" href="cfo.html">Virtual CFO Services</a></li>
-          </ul>
-        </li>
-        
-       
-        <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
-        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-        <li class="nav-item"><a class="nav-link" href="contactus.html">Schedule a Call</a></li>
-      </ul>
+
+
+
+
+
+
+
+
+
+    /* Why Spurt Section */
+    .why-spurt-section {
+      background: #f8fafc;
+    }
+
+    .why-spurt-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .why-spurt-heading {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      color: #2563eb;
+      background: #eaf2ff;
+      padding: 8px 18px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 15px;
+    }
+
+    .why-spurt-heading h2 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #173b65;
+      margin: 0 0 15px;
+    }
+
+    .why-spurt-heading p {
+      font-size: 18px;
+      color: #64748b;
+      margin: 0;
+    }
+
+    .why-spurt-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .why-spurt-card {
+      background: #ffffff;
+      padding: 35px 28px;
+      border: 1px solid #e8edf3;
+      border-radius: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .why-spurt-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(25, 55, 90, 0.10);
+      border-color: #cbdcf4;
+    }
+
+    .why-spurt-icon {
+      width: 65px;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #eaf4ff;
+      color: #2463a6;
+      border-radius: 16px;
+      margin-bottom: 25px;
+    }
+
+    .why-spurt-card h3 {
+      font-size: 21px;
+      line-height: 1.4;
+      color: #173b65;
+      margin: 0 0 15px;
+      font-weight: 700;
+    }
+
+    .why-spurt-card p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #64748b;
+      margin: 0;
+    }
+
+    /* Tablet */
+    @media (max-width: 991px) {
+      .why-spurt-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-spurt-heading h2 {
+        font-size: 36px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 576px) {
+      .why-spurt-section {
+        padding: 60px 18px;
+      }
+
+      .why-spurt-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .why-spurt-heading h2 {
+        font-size: 30px;
+      }
+
+      .why-spurt-heading p {
+        font-size: 16px;
+      }
+
+      .why-spurt-card {
+        padding: 28px 24px;
+      }
+    }
+
+
+    .email-phone-location-section {
+      margin-bottom: 50px;
+      margin-top: 50px;
+
+      .email-phone-location-inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+
+        .box-wrapper {
+          border-radius: 20px;
+          padding: 50px;
+
+          &:nth-child(1) {
+            background-color: #fff9e4;
+          }
+
+          &:nth-child(2) {
+
+            background-color: #e4f6ff;
+
+          }
+
+          &:nth-child(3) {
+            background-color: #ffece4;
+
+            .link-wrapper {
+              max-width: 80%;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+
+              @media(max-width: 575px) {
+                max-width: 100%;
+              }
+            }
+          }
+
+          .icon-wrapper {
+            width: 72px;
+            height: 70px;
+            border-radius: 16px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+            img {
+              width: 36px;
+            }
+          }
+
+          h3 {
+            color: #1e4d7b;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 12px;
+          }
+
+          .link-wrapper {
+            p {
+              margin: 0;
+              color: #2e2e2e;
+              font-size: 16px;
+
+              a {
+                text-decoration: none;
+                color: #2e2e2e;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                  color: #1e4d7b;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  </style>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="spurtlogo1.png" height="60px" width="200px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <!-- Company Dropdown (Now Clickable) -->
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="aboutus.html" id="companyDropdown">
+              Company
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="companyDropdown" style="margin-top:0px;">
+              <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+              <li><a class="dropdown-item" href="whyspurt.html">Why Spurt</a></li>
+              <li><a class="dropdown-item" href="ourteam.html">Our Team</a></li>
+              <li><a class="dropdown-item" href="career.html">Careers</a></li>
+            </ul>
+          </li>
+
+          <!-- Services Dropdown (Now Clickable) -->
+          <li class="nav-item dropdown hover-dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="margin-top:0px;">
+              <li><a class="dropdown-item" href="bookkeeping.html">Offshore Bookkeeping</a></li>
+              <li><a class="dropdown-item" href="tax_preparation.html">Tax Preparation</a></li>
+              <li><a class="dropdown-item" href="valuations.html">Valuations</a></li>
+              <li><a class="dropdown-item" href="payroll.html">Payroll Management</a></li>
+              <li><a class="dropdown-item" href="finance_report.html">Financial Reporting</a></li>
+
+              <li><a class="dropdown-item" href="cfo.html">Virtual CFO Services</a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="case-studies.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Schedule a Call</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
 
 
-<!-- Hero Section -->
-<section class="hero-section text-center p-5">
-  <div class="container">
-    <h1 class="display-5"><b>Smarter Accounting and Stronger Businesses</b></h1>
-    <p class="lead"><i style="color:#008080 !important;"><b>Accurate books. Insightful Valuations. Better Decisions.</b></i></p>
-    <a href="aboutus.html" class="btn btn-primary btn-lg mt-3">Read More</a>
-  </div>
-</section>
-<!-- Parent Ecosystem Legacy Section -->
-<section class="bg-light border-top border-bottom">
+  <!-- Hero Section -->
+  <section class="hero-section text-center p-5">
+    <div class="container">
+      <h1 class="display-5"><b>Smarter Accounting and Stronger Businesses</b></h1>
+      <p class="lead"><i style="color:#008080 !important;"><b>Accurate books. Insightful Valuations. Better
+            Decisions.</b></i></p>
+      <a href="aboutus.html" class="btn btn-primary btn-lg mt-3">Read More</a>
+    </div>
+  </section>
+  <!-- Parent Ecosystem Legacy Section -->
+  <section class="bg-light border-top border-bottom">
     <div class="container py-3">
-        <div class="row align-items-center g-5">
-            <div class="col-lg-6">
-                <span class="badge bg-secondary px-3 py-2 rounded-pill mb-3 text-uppercase tracking-wider small fw-bold">Our Foundation</span>
-                               <p class="text-muted mt-3">Our roots run deep in enterprise-grade data management. Our new finance division is built upon a parent ecosystem that has pioneered secure clinical trial data analysis, health content engineering, and AI annotations for a quarter-century.</p>
-                
-            </div>
-<div class="col-lg-6">
-    
-    <!-- White Rounded Stats Card -->
-    <div class="card border-0 rounded-4 shadow-sm stats-card mb-4">
-      <div class="card-body p-0">
-        <div class="row g-0 text-center">
-          
-          <!-- Stat 1 -->
-          <div class="col-md-4 py-4 px-3 stat-divider">
-            <div class="mb-2 text-orange">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="8" r="6"></circle>
-                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
-              </svg>
-            </div>
-            <h3 class="fw-bold mb-1 stat-title">25+</h3>
-            <p class="text-muted mb-0 small">Years of Excellence</p>
-          </div>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge bg-secondary px-3 py-2 rounded-pill mb-3 text-uppercase tracking-wider small fw-bold">Our
+            Foundation</span>
+          <p class="text-muted mt-3">Our roots run deep in enterprise-grade data management. Our new finance division is
+            built upon a parent ecosystem that has pioneered secure clinical trial data analysis, health content
+            engineering, and AI annotations for a quarter-century.</p>
 
-          <!-- Stat 2 -->
-          <div class="col-md-4 py-4 px-3 stat-divider">
-            <div class="mb-2 text-orange">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-            </div>
-            <h3 class="fw-bold mb-1 stat-title">100+</h3>
-            <p class="text-muted mb-0 small">Clients</p>
-          </div>
+        </div>
+        <div class="col-lg-6">
 
-          <!-- Stat 3 -->
-          <div class="col-md-4 py-4 px-3">
-            <div class="mb-2 text-orange">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                <path d="M2 12h20"></path>
-              </svg>
+          <!-- White Rounded Stats Card -->
+          <div class="card border-0 rounded-4 shadow-sm stats-card mb-4">
+            <div class="card-body p-0">
+              <div class="row g-0 text-center">
+
+                <!-- Stat 1 -->
+                <div class="col-md-4 py-4 px-3 stat-divider">
+                  <div class="mb-2 text-orange">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="8" r="6"></circle>
+                      <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                    </svg>
+                  </div>
+                  <h3 class="fw-bold mb-1 stat-title">25+</h3>
+                  <p class="text-muted mb-0 small">Years of Excellence</p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="col-md-4 py-4 px-3 stat-divider">
+                  <div class="mb-2 text-orange">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <h3 class="fw-bold mb-1 stat-title">100+</h3>
+                  <p class="text-muted mb-0 small">Clients</p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="col-md-4 py-4 px-3">
+                  <div class="mb-2 text-orange">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                      <path d="M2 12h20"></path>
+                    </svg>
+                  </div>
+                  <h3 class="fw-bold mb-1 stat-title">35+</h3>
+                  <p class="text-muted mb-0 small">Professionals</p>
+                </div>
+
+              </div>
             </div>
-            <h3 class="fw-bold mb-1 stat-title">35+</h3>
-            <p class="text-muted mb-0 small">Professionals</p>
           </div>
 
         </div>
       </div>
     </div>
-
-  </div>            
-        </div>
-    </div>
-</section>
+  </section>
 
 
 
 
-<!--<section class="container">
+  <!--<section class="container">
   <div class="container my-4" >
 
   <div class="row text-center">
@@ -221,240 +443,375 @@
   </div>
 </div>
 </section>-->
-<!-- Services Section -->
-<section class="container py-5">
-  <!-- Added "justify-content-center" to center the lone item on the last row -->
-  <div class="row g-4 justify-content-center">
-<div class="col-md-12">
-<span class="badge bg-secondary px-3 py-2 rounded-pill mb-3 text-uppercase tracking-wider small fw-bold">Our Services</span>
-</div>
-</div>
-<div class="row g-4 justify-content-center">
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="bookkeeping_icon.png" alt="Book Keeping" width="60" height="60">
-          <h4 class="card-title">Offshore Bookkeeping</h4>
-          <p class="card-text">Chart of Accounts is a platform for the entire accounting domain, known as the prime step in establishing the accounting and bookkeeping system.</p>
-          <a href="bookkeeping.html" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="taxation.png" alt="Book Keeping" width="60" height="60">
-          <h4 class="card-title">Tax Preparation</h4>
-          <p class="card-text">Providing accurate and complete General Ledger, Assets Ledgers, Expenses Ledgers, Income Ledgers, and Liability Ledgers for the business.</p>
-          <a href="tax_preparation.html" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    
- <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="valuation_icon.png" alt="Valuations" width="60" height="60">
-          <h4 class="card-title">Valuation Services</h4>
-          <p class="card-text">Providing professional business valuations, asset analysis, and financial appraisal modeling to drive strategic corporate decisions.</p>
-          <a href="valuations.html" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="payroll.png" alt="Book Keeping" width="60" height="60">
-          <h4 class="card-title">Payroll Management</h4>
-          <p class="card-text">We report your outstanding balance with the vendors and your customers’ outstanding balance with your company/ business.</p>
-          <a href="payroll.html" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="finance_icon.png" alt="Financial Reporting" width="60" height="60">
-          <h4 class="card-title">Financial Reporting</h4>
-          <p class="card-text">We inform you about your cash movement to help you in identifying and controlling cash-related areas. This can be one of the most important beneficial points of any company.</p>
-          <a href="finance_report.html" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="other_icon.png" alt="Payroll Management" width="60" height="60">
-          <h4 class="card-title">Virtual CFO Services</h4>
-          <p class="card-text">We prepare periodical reports as per the management requirements. These reports include balance sheets, income statements, cash flow statements, AP aging, AR aging, and such other reports.</p>
-          <a href="cfo.html" class="btn btn-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
 
-    
-  </div>
-</section>
+  <section class="why-spurt-section">
+    <div class="why-spurt-container">
 
-<section class="bg-light border-top border-bottom">
+      <div class="why-spurt-heading">
+        <!-- <span class="section-tag">WHY SPURT</span> -->
+        <br><br>
+        <h2>Why Choose Spurt?</h2>
+        <p>Your trusted platform for seamless Book Keeping.</p>
+      </div>
+
+      <div class="why-spurt-grid">
+
+        <!-- Card 1 -->
+        <div class="why-spurt-card">
+          <div class="why-spurt-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h3>Fast Turnaround Time</h3>
+          <p>We deliver accurate results on schedule, every time, so you can move forward without delays.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-spurt-card">
+          <div class="why-spurt-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 7h-9" />
+              <path d="M14 17H5" />
+              <circle cx="17" cy="17" r="3" />
+              <circle cx="7" cy="7" r="3" />
+            </svg>
+          </div>
+          <h3>Personalized Client Approach</h3>
+          <p>We tailor every solution to your unique business goals, backed by a dedicated point of contact.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-spurt-card">
+          <div class="why-spurt-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="10" cy="7" r="4" />
+              <path d="M20 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3>Experienced & Qualified Team</h3>
+          <p>Our skilled professionals bring proven expertise and precision to every project.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="why-spurt-card">
+          <div class="why-spurt-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              <circle cx="12" cy="16" r="1" />
+            </svg>
+          </div>
+          <h3>Data Security</h3>
+          <p>Your data is protected by strict confidentiality and secure systems at every step.</p>
+        </div>
+
+      </div>
+    </div>
+    <br><br>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- Services Section -->
+  <section class="container py-5">
+    <!-- Added "justify-content-center" to center the lone item on the last row -->
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-12">
+        <span class="badge bg-secondary px-3 py-2 rounded-pill mb-3 text-uppercase tracking-wider small fw-bold">Our
+          Services</span>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body text-center">
+            <img src="bookkeeping_icon.png" alt="Book Keeping" width="60" height="60">
+            <h4 class="card-title">Offshore Bookkeeping</h4>
+            <p class="card-text">Chart of Accounts is a platform for the entire accounting domain, known as the prime
+              step in establishing the accounting and bookkeeping system.</p>
+            <a href="bookkeeping.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body text-center">
+            <img src="taxation.png" alt="Book Keeping" width="60" height="60">
+            <h4 class="card-title">Tax Preparation</h4>
+            <p class="card-text">Providing accurate and complete General Ledger, Assets Ledgers, Expenses Ledgers,
+              Income Ledgers, and Liability Ledgers for the business.</p>
+            <a href="tax_preparation.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body text-center">
+            <img src="valuation_icon.png" alt="Valuations" width="60" height="60">
+            <h4 class="card-title">Valuation Services</h4>
+            <p class="card-text">Providing professional business valuations, asset analysis, and financial appraisal
+              modeling to drive strategic corporate decisions.</p>
+            <a href="valuations.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body text-center">
+            <img src="payroll.png" alt="Book Keeping" width="60" height="60">
+            <h4 class="card-title">Payroll Management</h4>
+            <p class="card-text">We report your outstanding balance with the vendors and your customers’ outstanding
+              balance with your company/ business.</p>
+            <a href="payroll.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body text-center">
+            <img src="finance_icon.png" alt="Financial Reporting" width="60" height="60">
+            <h4 class="card-title">Financial Reporting</h4>
+            <p class="card-text">We inform you about your cash movement to help you in identifying and controlling
+              cash-related areas. This can be one of the most important beneficial points of any company.</p>
+            <a href="finance_report.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body text-center">
+            <img src="other_icon.png" alt="Payroll Management" width="60" height="60">
+            <h4 class="card-title">Virtual CFO Services</h4>
+            <p class="card-text">We prepare periodical reports as per the management requirements. These reports include
+              balance sheets, income statements, cash flow statements, AP aging, AR aging, and such other reports.</p>
+            <a href="cfo.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="bg-light border-top border-bottom">
     <div class="container py-3">
-  <!-- Added "justify-content-center" to center the lone item on the last row -->
-  <div class="row g-4 justify-content-center">
-<div class="col-md-12">
-<span class="badge bg-secondary px-3 py-2 rounded-pill mb-3 text-uppercase tracking-wider small fw-bold">Industries We Serve</span>
-</div>
-</div>
-<div class="row g-4">
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<!-- <img src="manufacturing.png" alt="Manufacturing Icon" 
+      <!-- Added "justify-content-center" to center the lone item on the last row -->
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-12">
+          <span
+            class="badge bg-secondary px-3 py-2 rounded-pill mb-3 text-uppercase tracking-wider small fw-bold">Industries
+            We Serve</span>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <!-- <img src="manufacturing.png" alt="Manufacturing Icon" 
            style="width:60px; height:auto; margin-bottom:15px;"> -->
-           <img src="Manufacturing.png" alt="Manufacturing Icon" 
-           style="width:60px; height:auto; margin-bottom:15px;">
-          <h4 class="card-title">Manufacturing</h4>
-          <p class="card-text"></p>
+              <img src="Manufacturing.png" alt="Manufacturing Icon"
+                style="width:60px; height:auto; margin-bottom:15px;">
+              <h4 class="card-title">Manufacturing</h4>
+              <p class="card-text"></p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="house.png" alt="Real Estate Icon" 
-           style="width:60px; height:auto; margin-bottom:15px;">
-          <h4 class="card-title">Real Estate</h4>
-          <p class="card-text"></p>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <img src="house.png" alt="Real Estate Icon" style="width:60px; height:auto; margin-bottom:15px;">
+              <h4 class="card-title">Real Estate</h4>
+              <p class="card-text"></p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<!-- <img src="healthcare.png" alt="Healthcare Icon" 
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <!-- <img src="healthcare.png" alt="Healthcare Icon" 
            style="width:60px; height:auto; margin-bottom:15px;"> -->
-           <img src="Healthcare.png" alt="Healthcare Icon" 
-           style="width:60px; height:auto; margin-bottom:15px;">
-          <h4 class="card-title">Healthcare</h4>
-          <p class="card-text"></p>
+              <img src="Healthcare.png" alt="Healthcare Icon" style="width:60px; height:auto; margin-bottom:15px;">
+              <h4 class="card-title">Healthcare</h4>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <img src="agriculture.png" alt="Agriculture Icon" style="width:60px; height:auto; margin-bottom:15px;">
+              <h4 class="card-title">Agriculture</h4>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <img src="information_tech.png" alt="IT Icon" style="width:60px; height:auto; margin-bottom:15px;">
+              <h4 class="card-title">Information Technology</h4>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <img src="restaurant.png" alt="Hotel Icon" style="width:60px; height:auto; margin-bottom:15px;">
+              <h4 class="card-title">Hotels and Restaurants</h4>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <img src="shipping.png" alt="Shipping Icon" style="width:60px; height:auto; margin-bottom:15px;">
+              <h4 class="card-title">Shipping and Logistics</h4>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <img src="retail.png" alt="Retail Icon" style="width:60px; height:auto; margin-bottom:15px;">
+              <h4 class="card-title">Retail & E-commerce</h4>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body text-center">
+              <img src="small_business.png" alt="Business Icon" style="width:60px; height:auto; margin-bottom:15px;">
+              <h4 class="card-title">Other SMEs</h4>
+              <p class="card-text"></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="agriculture.png" alt="Agriculture Icon" 
-           style="width:60px; height:auto; margin-bottom:15px;">
-          <h4 class="card-title">Agriculture</h4>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="information_tech.png" alt="IT Icon" 
-           style="width:60px; height:auto; margin-bottom:15px;">
-          <h4 class="card-title">Information Technology</h4>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="restaurant.png" alt="Hotel Icon" 
-           style="width:60px; height:auto; margin-bottom:15px;">
-          <h4 class="card-title">Hotels and Restaurants</h4>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="shipping.png" alt="Shipping Icon" 
-           style="width:60px; height:auto; margin-bottom:15px;">
-          <h4 class="card-title">Shipping and Logistics</h4>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="retail.png" alt="Retail Icon" 
-           style="width:60px; height:auto; margin-bottom:15px;">
-          <h4 class="card-title">Retail & E-commerce</h4>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card shadow-sm h-100">
-        <div class="card-body text-center">
-<img src="small_business.png" alt="Business Icon" 
-           style="width:60px; height:auto; margin-bottom:15px;">
-          <h4 class="card-title">Other SMEs</h4>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
+  </section>
 
 
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center p-3">
-  <p>&copy; 2026 Spurt. All rights reserved.</p>
-</footer>
+  <section class="email-phone-location-section">
+    <div class="container">
+      <div class="email-phone-location-inner">
+        <div class="box-wrapper">
+          <div class="icon-wrapper">
+            <img src="email.png" alt="">
+          </div>
+          <h3>Email</h3>
+          <div class="link-wrapper">
+            <p><a href="mailto:info@spurt.com">info@spurt.com</a></p>
+            <p><a href="mailto:prashil@sprinty.in">prashil@sprinty.in</a></p>
+            <p><a href="mailto:charmi@sprinty.in">charmi@sprinty.in</a></p>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-  // Select all parent links inside the hover dropdowns
-  const dropdownLinks = document.querySelectorAll('.hover-dropdown > .dropdown-toggle');
+          </div>
+        </div>
+        <div class="box-wrapper">
+          <div class="icon-wrapper">
+            <img src="phone.png" alt="">
+          </div>
+          <h3>Phone</h3>
+          <div class="link-wrapper">
+            <p>
+              India: <a href="tel:+919909915140">+91 99099 15140</a>
+            </p>
+            <p>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="tel:+916355514686">+91 63555 14686</a>
+            </p>
+          </div>
+        </div>
+        <div class="box-wrapper">
+          <div class="icon-wrapper">
+            <img src="location.png" alt="">
+          </div>
+          <h3>Location</h3>
+          <!-- <div class="link-wrapper"> -->
+          <div>
+            <p>
+              <strong>Spurt Limited</strong><br>
+              The First Floor, Shapath II,<br>
+              Sarkhej - Gandhinagar Highway,<br>
+              Opp. Rajpath Rangoli Road,<br>
+              Ahmedabad, Gujarat 380015.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  dropdownLinks.forEach(link => {
-    link.addEventListener('click', function (e) {
-      // Only execute this logic on mobile screens (less than 992px)
-      if (window.innerWidth < 992) {
-        const parentLi = this.parentElement;
-        const isOpen = parentLi.classList.contains('show');
 
-        if (!isOpen) {
-          // Prevent navigating to the .html page on the first tap
-          e.preventDefault(); 
-          
-          // Close any other open dropdowns first
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2026 Spurt. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Select all parent links inside the hover dropdowns
+      const dropdownLinks = document.querySelectorAll('.hover-dropdown > .dropdown-toggle');
+
+      dropdownLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          // Only execute this logic on mobile screens (less than 992px)
+          if (window.innerWidth < 992) {
+            const parentLi = this.parentElement;
+            const isOpen = parentLi.classList.contains('show');
+
+            if (!isOpen) {
+              // Prevent navigating to the .html page on the first tap
+              e.preventDefault();
+
+              // Close any other open dropdowns first
+              document.querySelectorAll('.hover-dropdown').forEach(li => li.classList.remove('show'));
+              document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.remove('show'));
+
+              // Open current dropdown
+              parentLi.classList.add('show');
+              this.nextElementSibling.classList.add('show');
+              this.setAttribute('aria-expanded', 'true');
+            }
+            // If it is already open, the second tap will naturally follow the href link
+          }
+        });
+      });
+
+      // Close dropdowns if user clicks anywhere else on the screen
+      document.addEventListener('click', function (e) {
+        if (window.innerWidth < 992 && !e.target.closest('.hover-dropdown')) {
           document.querySelectorAll('.hover-dropdown').forEach(li => li.classList.remove('show'));
           document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.remove('show'));
-
-          // Open current dropdown
-          parentLi.classList.add('show');
-          this.nextElementSibling.classList.add('show');
-          this.setAttribute('aria-expanded', 'true');
         }
-        // If it is already open, the second tap will naturally follow the href link
-      }
+      });
     });
-  });
 
-  // Close dropdowns if user clicks anywhere else on the screen
-  document.addEventListener('click', function (e) {
-    if (window.innerWidth < 992 && !e.target.closest('.hover-dropdown')) {
-      document.querySelectorAll('.hover-dropdown').forEach(li => li.classList.remove('show'));
-      document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.remove('show'));
-    }
-  });
-});
-
-</script>  
+  </script>
 </body>
+
 </html>
